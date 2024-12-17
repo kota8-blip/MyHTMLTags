@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>写真詳細</title>
+</head>
+<body>
+    <h1>写真詳細</h1>
+    <div id="photo-detail">
+      <img id="large-photo" src="" alt="写真" style="max-width: 100%; height: auto;">
+      <p id="photo-title"></p>
+    </div>
+  
+    <button onclick="history.back()">戻る</button>
+  
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const title = params.get("title");
+        const url = params.get("url");
+  
+        document.getElementById("photo-title").innerText = title;
+        document.getElementById("large-photo").src = url;
+    </script>
+</body>
+</html>
