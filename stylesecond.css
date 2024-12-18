@@ -752,3 +752,50 @@ body.no-scroll{
   padding-top: 30px;
   font-size: 12px;
 }
+
+@media (max-width: 768px) and (orientation: portrait){
+  .container p {
+    writing-mode: vertical-rl;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .wrapper{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left-text{
+    position: static;
+    margin-right: 0;
+    transform: none;
+    text-align: center;
+    margin-top: calc(35vh);
+  }
+
+  .centered-text{
+    order: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+@media (max-width: 956px) and (orientation: landscape){
+  .clickable-area{
+    display: none;
+  }
+  .info-icon{
+    display: none;
+  }
+  .text-wrapper{
+    display: none;
+  }
+
+  .left-text{
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
