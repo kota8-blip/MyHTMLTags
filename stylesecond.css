@@ -797,7 +797,12 @@ body.no-scroll{
     padding: 0;
     overflow-x: hidden;
   }
-  
+
+  .main-story{
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .clickable-area{
     display: none;
   }
