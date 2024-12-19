@@ -754,10 +754,10 @@ body.no-scroll{
 }
 
 @media (max-width: 768px) and (orientation: portrait){
-  body{
+  html, body{
     overflow-x: hidden;
   }
-  
+
   .container p {
     writing-mode: vertical-rl;
     padding: 5px;
