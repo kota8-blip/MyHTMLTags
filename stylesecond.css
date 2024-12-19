@@ -754,10 +754,18 @@ body.no-scroll{
 }
 
 @media (max-width: 768px) and (orientation: portrait){
+  body{
+    overflow-x: hidden;
+  }
+  
   .container p {
     writing-mode: vertical-rl;
     padding: 5px;
     margin: 0;
+  }
+
+  .search-area{
+    display: none;
   }
 
   .wrapper{
@@ -781,7 +789,7 @@ body.no-scroll{
     transform: translate(-50%, -50%);
     text-align: center;
   }
-}
+  }
 
 @media (max-width: 956px) and (orientation: landscape){
   .clickable-area{
