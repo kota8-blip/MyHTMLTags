@@ -792,26 +792,10 @@ body.no-scroll{
   }
 
 @media (max-width: 956px) and (orientation: landscape){
-  html, body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-
   .main-story{
-    width: 100%;
-    overflow-x: hidden;
+    background-size: contain;
   }
-
-  .header{
-    padding: 0 10px;
-  }
-
-  .header .container p {
-    margin: 0;
-    padding: 0;
-  }
-
+  
   .clickable-area{
     display: none;
   }
@@ -825,14 +809,5 @@ body.no-scroll{
   .left-text{
     right: 0;
     transform: translateY(-50%);
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 10px;
-  }
-
-  .centered-text{
-    text-align: center;
-    padding: 0 10px;
   }
 }
