@@ -79,9 +79,7 @@ window.addEventListener('scroll', function(){
   const hamburger = this.document.querySelector('.hamburger');
   const overlay = this.document.querySelector('.overlay');
 
-  const triggerHeight = this.window.innerHeight * 0.5
-
-  if(window.scrollY > triggerHeight){
+  if(window.scrollY > window.innerHeight){
     header.classList.add('fixed');
     searchBox.classList.add('active');
     hamburger.classList.add('active');
