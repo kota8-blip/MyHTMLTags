@@ -792,10 +792,6 @@ body.no-scroll{
   }
 
 @media (max-width: 956px) and (orientation: landscape){
-  .main-story{
-    background-size: 100vw 100vh;
-  }
-
   .clickable-area,
   .info-icon,
   .text-wrapper{
