@@ -297,36 +297,31 @@ body.no-scroll{
 }
 
 .wrapper{
+  color: whitesmoke;
+  flex-wrap: wrap;/*
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: whitesmoke;
+  transform: translate(-50%, -50%);*/
 }
 
 .left-text{
   font-size: 0.5em;
-  text-align: left;
   line-height: 1.5;
-  margin-right: 175px;
   pointer-events: none;
   position: absolute;
-  right: 100%;
+  left: 25%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 5px;
 }
 
 .left-text p{
   margin: 0;
-  max-width: 100%;
-  white-space: nowrap;
+  width: auto;
+  white-space: normal;
 }
 
 .left-text .first-line{
@@ -335,6 +330,10 @@ body.no-scroll{
 }
 
 .centered-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -769,37 +768,39 @@ body.no-scroll{
   }
 
   .wrapper{
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 
   .left-text{
-    position: static;
-    margin-right: 0;
-    transform: none;
     text-align: center;
-    margin-top: calc(35vh);
-  }
-
-  .centered-text{
-    order: -1;
-    position: absolute;
-    top: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    top: 65%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
   }
   }
 
-@media (max-width: 956px) and (orientation: landscape){
-  .clickable-area,
-  .info-icon,
-  .text-wrapper{
-    display: none;
-  }
-
-  .left-text{
-    right: 0;
-    transform: translateY(-50%);
-  }
-}
+  @media (max-width: 956px) and (orientation: landscape){
+    .clickable-area,
+    .info-icon,
+    .text-wrapper{
+      display: none;
+    }
+  /*
+    .wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
