@@ -1,6 +1,3 @@
 # 除外するファイルやフォルダ
 __pycache__/
 venv/
-My second webpage/
-*.pyc
-*.log
