@@ -814,6 +814,30 @@ body.no-scroll{
     font-size: 0.4em;
   }
 
+  .third-story{
+    height: 100vh;
+  }
+
+  .content{
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .image-slide{
+    position: absolute;
+    top: 40%;
+  }
+  
+  .slider{
+    animation: slide 15s linear infinite;
+    gap: 60px;
+  }
+  
+  .slider img{
+    height: 50vh;
+  }
+
   }
 
   @media (max-width: 956px) and (orientation: landscape){
@@ -845,6 +869,11 @@ body.no-scroll{
     .small{
       font-size: 0.3em;
       top: 60%;
+    }
+
+    .content{
+      width: 100%;
+      top: 25%;
     }
 
     }
