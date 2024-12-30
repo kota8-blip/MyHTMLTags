@@ -787,22 +787,6 @@ body.no-scroll{
     right: 10%;
   }
   
-  .underline{
-    width: 0.8px;
-    left: -1.5px;
-  }
-  
-  .vertical-text{
-    margin-right: 0.7px;
-  }
-  
-  .furigana{
-    font-size: 0.5em;
-    margin-left: 0.7px;
-    letter-spacing: 8px;
-    margin-top: 5px;
-  }
-  
   .version2{
     position: absolute;
     top: 37%;
@@ -820,14 +804,14 @@ body.no-scroll{
   
   .scroll-left-text{
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 15%;
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
   
   .small{
     top: 75%;
-    font-size: 0.3em;
+    font-size: 0.4em;
   }
 
   }
@@ -837,23 +821,6 @@ body.no-scroll{
     .info-icon,
     .text-wrapper{
       display: none;
-    }
-
-    .underline{
-      width: 0.8px;
-      left: -1.5px;
-    }
-    
-    .vertical-text{
-      font-size: 1.0em;
-      margin-right: 0.7px;
-    }
-    
-    .furigana{
-      font-size: 0.3em;
-      margin-left: 0.7px;
-      letter-spacing: 8px;
-      margin-top: 5px;
     }
     
     .version2{
