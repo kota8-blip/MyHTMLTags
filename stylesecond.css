@@ -298,11 +298,7 @@ body.no-scroll{
 
 .wrapper{
   color: whitesmoke;
-  flex-wrap: wrap;/*
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(-50%, -50%);*/
+  flex-wrap: wrap;
 }
 
 .left-text{
@@ -784,6 +780,57 @@ body.no-scroll{
     top: 65%;
     left: 50%;
   }
+
+  .vertical-text-wrapper{
+    position: absolute;
+    top: 25%;
+    right: 10%;
+  }
+  
+  .underline{
+    width: 0.8px;
+    left: -1.5px;
+  }
+  
+  .vertical-text{
+    font-size: 1.8em;
+    margin-right: 0.7px;
+  }
+  
+  .furigana{
+    font-size: 0.5em;
+    margin-left: 0.7px;
+    letter-spacing: 8px;
+    margin-top: 5px;
+  }
+  
+  .version2{
+    position: absolute;
+    top: 37%;
+    right: 30%;
+  }
+  
+  .vertical-text-large{
+    font-size: 1.5em;
+    margin-right: 3px;
+  }
+  
+  .vertical-text-large:nth-child(1){
+    margin-top: 2em;
+  }
+  
+  .scroll-left-text{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    font-size: 0.5em;
+  }
+  
+  .small{
+    top: 75%;
+    font-size: 0.3em;
+  }
+
   }
 
   @media (max-width: 956px) and (orientation: landscape){
@@ -792,15 +839,46 @@ body.no-scroll{
     .text-wrapper{
       display: none;
     }
-  /*
-    .wrapper{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
+
+    .underline{
+      width: 0.8px;
+      left: -1.5px;
+    }
+    
+    .vertical-text{
+      font-size: 1.0em;
+      margin-right: 0.7px;
+    }
+    
+    .furigana{
+      font-size: 0.3em;
+      margin-left: 0.7px;
+      letter-spacing: 8px;
+      margin-top: 5px;
+    }
+    
+    .version2{
+      top: 37%;
+      right: 30%;
+    }
+    
+    .vertical-text-large{
+      font-size: 1.3em;
+      margin-right: 3px;
+    }
+    
+    .vertical-text-large:nth-child(1){
+      margin-top: 2em;
+    }
+
+    .scroll-left-text{
+      font-size: 0.5em;
+      cursor: text;
+    }
+
+    .small{
+      font-size: 0.3em;
+      top: 60%;
+    }
+
     }
