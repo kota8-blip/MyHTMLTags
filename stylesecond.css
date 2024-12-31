@@ -504,13 +504,13 @@ body.no-scroll{
 
 .forth-story .content{
   position: absolute;
-  top: 12.5rem;
+  top: 7.5%;
 }
 
 .image-animation{
   position: absolute;
-  top: 25rem;
-  left: 13%;
+  top: 15%;
+  left: 5%;
 }
 
 .animation img{
@@ -518,15 +518,15 @@ body.no-scroll{
   top: 0;
   left: 0;
   width: auto;
-  height: 42vh;
+  height: 50vh;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
 
 .timers{
   position: absolute;
-  top: 20.625rem;
-  left: 24.375rem;
+  top: 35%;
+  left: 40%;
   display: flex;
   gap: 0.3125rem;
 }
@@ -542,7 +542,7 @@ body.no-scroll{
 
 .restaurant-info{
   position: absolute;
-  top: 25rem;
+  top: 15%;
   left: 50%;
   width: 66.6%;
   line-height: 1.875rem;
@@ -566,8 +566,8 @@ body.no-scroll{
 
 .image-animation2{
   position: absolute;
-  top: 56.25rem;
-  left: 13%;
+  top: 42.5%;
+  left: 5%;
 }
 
 .second-animation img{
@@ -575,15 +575,15 @@ body.no-scroll{
   top: 0;
   left: 0;
   width: auto;
-  height: 42vh;
+  height: 50vh;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
 
 .second-timers{
   position: absolute;
-  top: 20.625rem;
-  left: 24.375rem;
+  top: 62.5%;
+  left: 40%;
   display: flex;
   gap: 0.3125rem;
 }
@@ -599,15 +599,7 @@ body.no-scroll{
 
 .sauna-info{
   position: absolute;
-  top: 56.25rem;
-  left: 50%;
-  width: 66.6%;
-  line-height: 1.875rem;
-}
-
-.gallery-info{
-  position: absolute;
-  top: 87.5rem;
+  top: 42.5%;
   left: 50%;
   width: 66.6%;
   line-height: 1.875rem;
@@ -615,8 +607,8 @@ body.no-scroll{
 
 .image-animation3{
   position: absolute;
-  top: 87.5rem;
-  left: 13%;
+  top: 70%;
+  left: 5%;
 }
 
 .third-animation img{
@@ -624,15 +616,15 @@ body.no-scroll{
   top: 0;
   left: 0;
   width: auto;
-  height: 42vh;
+  height: 50vh;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
 
 .third-timers{
   position: absolute;
-  top: 20.625rem;
-  left: 24.375rem;
+  top: 90%;
+  left: 40%;
   display: flex;
   gap: 0.3125rem;
 }
@@ -644,6 +636,14 @@ body.no-scroll{
   border-top-color: #000;
   border-radius: 50%;
   transform: rotate(0deg);
+}
+
+.gallery-info{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 66.6%;
+  line-height: 1.875rem;
 }
 
 .footer{
