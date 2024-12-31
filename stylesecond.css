@@ -524,9 +524,8 @@ body.no-scroll{
 }
 
 .timers{
-  position: absolute;
-  top: 35%;
-  left: 40%;
+  padding-top: 0.1rem;
+  padding-left: 0.1rem;
   display: flex;
   gap: 0.3125rem;
 }
@@ -581,9 +580,8 @@ body.no-scroll{
 }
 
 .second-timers{
-  position: absolute;
-  top: 62.5%;
-  left: 40%;
+  padding-top: 0.1rem;
+  padding-left: 0.1rem;
   display: flex;
   gap: 0.3125rem;
 }
@@ -622,9 +620,8 @@ body.no-scroll{
 }
 
 .third-timers{
-  position: absolute;
-  top: 90%;
-  left: 40%;
+  padding-top: 0.1rem;
+  padding-left: 0.1rem;
   display: flex;
   gap: 0.3125rem;
 }
@@ -880,6 +877,30 @@ body.no-scroll{
     .content{
       width: 100%;
       top: 25%;
+    }
+
+    .restaurant-info{
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      width: 50%;
+      line-height: 1rem;
+    }
+    
+    .underline2{
+      width: 31.25rem;
+      height: 0.0625rem;
+      background-color: rgba(91, 72, 43, 0.5);
+      margin-top: 0.75rem;
+    }
+    
+    .restaurant-info .subtext1,
+    .restaurant-info .subtext2,
+    .sauna-info .subtext1,
+    .sauna-info .subtext2,
+    .gallery-info .subtext1,
+    .gallery-info .subtext2{
+      max-width: 20rem;
     }
 
     }
