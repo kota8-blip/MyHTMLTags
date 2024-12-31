@@ -374,27 +374,27 @@ body.no-scroll{
 }
 
 .underline{
-  width: 1px;
+  width: 0.0625rem;
   height: 100%;
   background-color: whitesmoke;
   position: absolute;
-  left: -2px;
+  left: -0.125rem;
 }
 
 .vertical-text{
   writing-mode: vertical-rl;
   color: whitesmoke;
   font-size: 1.5em;
-  margin-right: 1px;
+  margin-right: 0.0625rem;
 }
 
 .furigana{
   writing-mode: vertical-rl;
   font-size: 0.5em;
   color: whitesmoke;
-  margin-left: 1px;
-  letter-spacing: 10px;
-  margin-top: 8px;
+  margin-left: 0.0625rem;
+  letter-spacing: 0.625rem;
+  margin-top: 0.5rem;
 }
 
 .version2{
@@ -406,7 +406,7 @@ body.no-scroll{
   writing-mode: vertical-rl;
   color: whitesmoke;
   font-size: 1.8em;
-  margin-right: 4px;
+  margin-right: 0.25rem;
 }
 
 .vertical-text-large:nth-child(1){
@@ -458,12 +458,12 @@ body.no-scroll{
 
 .subtext1{
   font-size: 1em;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .subtext2{
   font-size: 0.8em;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .image-slide{
@@ -476,7 +476,7 @@ body.no-scroll{
 .slider{
   display: flex;
   animation: slide 25s linear infinite;
-  gap: 60px;
+  gap: 3.75rem;
 }
 
 .slider img{
@@ -504,12 +504,12 @@ body.no-scroll{
 
 .forth-story .content{
   position: absolute;
-  top: 200px;
+  top: 12.5rem;
 }
 
 .image-animation{
   position: absolute;
-  top: 400px;
+  top: 25rem;
   left: 13%;
 }
 
@@ -525,16 +525,16 @@ body.no-scroll{
 
 .timers{
   position: absolute;
-  top: 330px;
-  left: 390px;
+  top: 20.625rem;
+  left: 24.375rem;
   display: flex;
-  gap: 5px;
+  gap: 0.3125rem;
 }
 
 .timer{
-  width: 5px;
-  height: 5px;
-  border: 1px solid #ccc;
+  width: 0.3125rem;
+  height: 0.3125rem;
+  border: 0.0625rem solid #ccc;
   border-top-color: #000;
   border-radius: 50%;
   transform: rotate(0deg);
@@ -542,17 +542,17 @@ body.no-scroll{
 
 .restaurant-info{
   position: absolute;
-  top: 400px;
+  top: 25rem;
   left: 50%;
   width: 66.6%;
-  line-height: 30px;
+  line-height: 1.875rem;
 }
 
 .underline2{
-  width: 500px;
-  height: 1px;
+  width: 31.25rem;
+  height: 0.0625rem;
   background-color: rgba(91, 72, 43, 0.5);
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .restaurant-info .subtext1,
@@ -561,12 +561,12 @@ body.no-scroll{
 .sauna-info .subtext2,
 .gallery-info .subtext1,
 .gallery-info .subtext2{
-  max-width: 500px;
+  max-width: 31.25rem;
 }
 
 .image-animation2{
   position: absolute;
-  top: 900px;
+  top: 56.25rem;
   left: 13%;
 }
 
@@ -582,16 +582,16 @@ body.no-scroll{
 
 .second-timers{
   position: absolute;
-  top: 330px;
-  left: 390px;
+  top: 20.625rem;
+  left: 24.375rem;
   display: flex;
-  gap: 5px;
+  gap: 0.3125rem;
 }
 
 .second-timer{
-  width: 5px;
-  height: 5px;
-  border: 1px solid #ccc;
+  width: 0.3125rem;
+  height: 0.3125rem;
+  border: 0.0625rem solid #ccc;
   border-top-color: #000;
   border-radius: 50%;
   transform: rotate(0deg);
@@ -599,23 +599,23 @@ body.no-scroll{
 
 .sauna-info{
   position: absolute;
-  top: 900px;
+  top: 56.25rem;
   left: 50%;
   width: 66.6%;
-  line-height: 30px;
+  line-height: 1.875rem;
 }
 
 .gallery-info{
   position: absolute;
-  top: 1400px;
+  top: 87.5rem;
   left: 50%;
   width: 66.6%;
-  line-height: 30px;
+  line-height: 1.875rem;
 }
 
 .image-animation3{
   position: absolute;
-  top: 1400px;
+  top: 87.5rem;
   left: 13%;
 }
 
@@ -631,16 +631,16 @@ body.no-scroll{
 
 .third-timers{
   position: absolute;
-  top: 330px;
-  left: 390px;
+  top: 20.625rem;
+  left: 24.375rem;
   display: flex;
-  gap: 5px;
+  gap: 0.3125rem;
 }
 
 .third-timer{
-  width: 5px;
-  height: 5px;
-  border: 1px solid #ccc;
+  width: 0.3125rem;
+  height: 0.3125rem;
+  border: 0.0625rem solid #ccc;
   border-top-color: #000;
   border-radius: 50%;
   transform: rotate(0deg);
