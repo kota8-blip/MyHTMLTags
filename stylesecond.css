@@ -810,7 +810,7 @@ body.no-scroll{
   
   .small{
     top: 78%;
-    font-size: 0.4em;
+    font-size: 0.6em;
     line-height: 1.2;
   }
 
@@ -819,9 +819,17 @@ body.no-scroll{
   }
 
   .content{
-    top: 25%;
     left: 50%;
+    top: 25%;
+    width: 100%;
     transform: translate(-50%, -50%);
+  }
+
+  .content .subtext1,
+  .content .subtext2{
+    position: static;
+    left: auto;
+    max-width: 90%;
   }
   
   .image-slide{
