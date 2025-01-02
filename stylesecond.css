@@ -660,20 +660,20 @@ body.no-scroll{
 .informations{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
   margin-right: auto;
 }
 
 .informations-left{
   display: flex;
-  gap: 40px;
-  padding-left: 80px;
-  padding-top: 80px;
+  gap: 2.5rem;
+  padding-left: 5rem;
+  padding-top: 5rem;
 }
 
 .map-icon{
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .map-icon a{
@@ -681,7 +681,7 @@ body.no-scroll{
 }
 
 .social-icons{
-  padding-right: 80px;
+  padding-right: 5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -691,10 +691,10 @@ body.no-scroll{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  font-size: 20px;
-  margin-top: 80px;
-  padding-bottom: 45px;
+  gap: 1rem;
+  font-size: 1.25rem;
+  margin-top: 5rem;
+  padding-bottom: 2.8125rem;
 }
 
 .sns-icons a{
@@ -710,8 +710,8 @@ body.no-scroll{
 .search-box2 input{
   background-color: rgba(91, 72, 43, 0.5);
   display: flex;
-  padding: 5px 10px;
-  border-radius: 30px;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 1.875rem;
   text-align: center;
   height: 3vh;
   border: none;
@@ -724,10 +724,10 @@ body.no-scroll{
 .container-group1,
 .container-group2{
   display:flex;
-  gap:20px; 
+  gap:1.25rem;
   cursor: pointer;
   color: rgba(91, 72, 43, 0.5);
-  padding-bottom: 15px;
+  padding-bottom: 1rem;
 }
 
 .container-group1 p,
@@ -742,8 +742,8 @@ body.no-scroll{
 
 .corporate{
   text-align: right;
-  padding-top: 30px;
-  font-size: 12px;
+  padding-top: 1.875rem;
+  font-size: 0.75rem;
 }
 
 @media (max-width: 768px) and (orientation: portrait){
@@ -753,7 +753,7 @@ body.no-scroll{
 
   .container p {
     writing-mode: vertical-rl;
-    padding: 5px;
+    padding: 0.3125rem;
     margin: 0;
   }
 
@@ -792,25 +792,25 @@ body.no-scroll{
   }
   
   .vertical-text-large{
-    font-size: 1.5em;
-    margin-right: 3px;
+    font-size: 1.5rem;
+    margin-right: 0.1875rem;
   }
   
   .vertical-text-large:nth-child(1){
-    margin-top: 2em;
+    margin-top: 2rem;
   }
   
   .scroll-left-text{
     position: absolute;
     top: 58%;
     left: 15%;
-    font-size: 0.7em;
+    font-size: 0.7rem;
     line-height: 1.2;
   }
   
   .small{
     top: 78%;
-    font-size: 0.6em;
+    font-size: 0.6rem;
     line-height: 1.2;
   }
 
@@ -839,7 +839,7 @@ body.no-scroll{
   
   .slider{
     animation: slide 15s linear infinite;
-    gap: 60px;
+    gap: 3.75rem;
   }
   
   .slider img{
@@ -891,6 +891,117 @@ body.no-scroll{
     max-width: 98%;
     margin-top: 1rem;
     font-size: 0.7rem;
+  }
+
+
+  .footer{
+    height: 50vh;
+    width: 100%;
+    color: rgba(91, 72, 43, 0.5);
+    background-color: rgba(195, 188, 174, 0.503);
+  }
+  
+  .footer-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer img{
+    height: 10vh;
+    display: block;
+  }
+
+  .informations-left{
+    display: flex;
+    gap: 0.5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    width: 45%;
+  }
+  
+  .informations{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-right: auto;
+    font-size: 0.6rem;
+  }
+  
+  .map-icon{
+    display: flex;
+    gap: 0.2rem;
+  }
+  
+  .map-icon a{
+    color: rgba(91, 72, 43, 0.5);
+  }
+  
+  .social-icons{
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .sns-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    font-size: 0.6rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .sns-icons a{
+    color: rgba(91, 72, 43, 0.5);
+  }
+  
+  .search-box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-box2 input{
+    background-color: rgba(91, 72, 43, 0.5);
+    display: flex;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 1.875rem;
+    text-align: center;
+    height: 1.5vh;
+    border: none;
+    font-size: 0.6rem;
+  }
+  
+  .search-box2 input::placeholder{
+    color: whitesmoke;
+  }
+  
+  .container-group1,
+  .container-group2{
+    display:flex;
+    gap:0.3rem;
+    cursor: pointer;
+    color: rgba(91, 72, 43, 0.5);
+    padding-bottom: 0.3rem;
+    font-size: 0.7rem;
+  }
+  
+  .container-group1 p,
+  .container-group2 p{
+    margin: 0;
+  }
+  
+  .container-group1 p:hover,
+  .container-group2 p:hover{
+    color: rgba(174, 161, 123, 0.5);
+  }
+  
+  .corporate{
+    text-align: right;
+    padding-bottom: 0.5rem;
+    font-size: 0.4rem;
   }
 
   }
@@ -952,6 +1063,43 @@ body.no-scroll{
     .gallery-info .subtext2{
       max-width: 95%;
       margin-top: 1rem;
+    }
+    
+    .informations{
+      gap: 0.4rem;
+    }
+    
+    .informations-left{
+      gap: 1rem;
+      padding-left: 2.5rem;
+      padding-top: 2.5rem;
+      font-size: 0.8rem;
+    }
+    
+    .map-icon{
+      gap: 0.3rem;
+    }
+    
+    .social-icons{
+      padding-right: 2rem;
+    }
+    
+    .sns-icons{
+      gap: 0.3rem;
+      font-size: 1rem;
+      margin-top: 2.5rem;
+      padding-bottom: 1rem;
+    }
+
+    .container-group1,
+    .container-group2{
+      gap:0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    
+    .corporate{
+      padding-bottom: 0.5rem;
+      font-size: 0.6rem;
     }
 
     }
