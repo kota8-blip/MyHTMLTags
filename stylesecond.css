@@ -895,24 +895,14 @@ body.no-scroll{
 
 
   .footer{
-    height: 50vh;
-    width: 100%;
-    color: rgba(91, 72, 43, 0.5);
-    background-color: rgba(195, 188, 174, 0.503);
-  }
-  
-  .footer-container{
-    display: flex;
-    justify-content: space-between;
+    height: 45vh;
   }
   
   .footer img{
     height: 10vh;
-    display: block;
   }
 
   .informations-left{
-    display: flex;
     gap: 0.5rem;
     padding-left: 1rem;
     padding-top: 1rem;
@@ -920,86 +910,40 @@ body.no-scroll{
   }
   
   .informations{
-    display: flex;
-    flex-direction: column;
     gap: 0.4rem;
-    margin-right: auto;
     font-size: 0.6rem;
   }
   
   .map-icon{
-    display: flex;
     gap: 0.2rem;
-  }
-  
-  .map-icon a{
-    color: rgba(91, 72, 43, 0.5);
   }
   
   .social-icons{
     padding-right: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
   }
   
   .sns-icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 0.3rem;
     font-size: 0.6rem;
     margin-top: 1rem;
     padding-bottom: 1rem;
   }
   
-  .sns-icons a{
-    color: rgba(91, 72, 43, 0.5);
-  }
-  
-  .search-box2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
   .search-box2 input{
-    background-color: rgba(91, 72, 43, 0.5);
-    display: flex;
     padding: 0.3125rem 0.625rem;
     border-radius: 1.875rem;
-    text-align: center;
     height: 1.5vh;
-    border: none;
     font-size: 0.6rem;
-  }
-  
-  .search-box2 input::placeholder{
-    color: whitesmoke;
   }
   
   .container-group1,
   .container-group2{
-    display:flex;
     gap:0.3rem;
-    cursor: pointer;
-    color: rgba(91, 72, 43, 0.5);
     padding-bottom: 0.3rem;
     font-size: 0.7rem;
   }
-  
-  .container-group1 p,
-  .container-group2 p{
-    margin: 0;
-  }
-  
-  .container-group1 p:hover,
-  .container-group2 p:hover{
-    color: rgba(174, 161, 123, 0.5);
-  }
-  
+
   .corporate{
-    text-align: right;
     padding-bottom: 0.5rem;
     font-size: 0.4rem;
   }
