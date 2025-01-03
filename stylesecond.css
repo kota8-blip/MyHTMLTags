@@ -474,6 +474,7 @@ body.no-scroll{
   overflow: hidden;
   position: absolute;
   top: 40%;
+  cursor: pointer;
 }
 
 .slider{

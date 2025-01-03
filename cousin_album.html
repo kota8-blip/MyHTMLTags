@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>いとこアルバム</title>
+  <link rel="stylesheet" href="stylesecond.css">
+</head>
+<body>
+  <h1 class="album_title">いとこアルバム</h1>
+  <div class="photo-gallery">
+    <img src="images/cousin_1424.JPEG" alt="写真１" class="thumbnail" onclick="openModal(this)">
+  </div>
+
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <script src="mainsecond.js"></script>
+</body>
+</html>
