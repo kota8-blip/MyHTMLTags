@@ -14,6 +14,82 @@ JavaScriptにおける数値の表現
 console.log(1.2e4);//1.2かける10の4乗＝12000
 console.log(1.2e-4);//1.2かける10の-4乗＝0.00012
 
+const cousinImages = [
+"images/cousin_1424.JPEG",
+"images/cousin_1586.JPEG",
+"images/cousin_1934.JPEG",
+"images/cousin_2039.JPEG",
+"images/cousin_2295.JPEG",
+"images/cousin_2301.JPEG",
+"images/cousin_2447.JPEG",
+"images/cousin_2650.JPEG",
+"images/cousin_3021.JPEG",
+"images/cousin_3266.JPEG",
+"images/cousin_3277.JPEG",
+"images/cousin_3287.JPEG",
+"images/cousin_3288.JPEG",
+"images/cousin_3298.JPEG",
+"images/cousin_3495.JPEG",
+"images/cousin_3501.JPEG",
+"images/cousin_3801.JPEG",
+"images/cousin_3816.JPEG",
+"images/cousin_3907.JPEG",
+"images/cousin_4011.JPEG",
+"images/cousin_4033.JPEG",
+"images/cousin_4212.JPEG",
+"images/cousin_4479.JPEG",
+"images/cousin_4558.JPEG",
+"images/cousin_4705.JPEG",
+"images/cousin_4921.JPEG",
+"images/cousin_4983.JPEG",
+"images/cousin_4991.JPEG",
+"images/cousin_4993.JPEG",
+"images/cousin_5013.JPEG",
+"images/cousin_5043.JPEG",
+"images/cousin_5067.JPEG",
+"images/cousin_5120.JPEG",
+"images/cousin_5242.JPEG",
+"images/cousin_5246.JPEG",
+"images/cousin_5253.JPEG",
+"images/cousin_5273.JPEG",
+"images/cousin_5367.JPEG",
+"images/cousin_5419.JPEG",
+"images/cousin_5513.JPEG",
+"images/cousin_5652.JPEG",
+"images/cousin_5696.JPEG",
+"images/cousin_5721.JPEG",
+"images/cousin_5729.JPEG",
+"images/cousin_5999.JPEG",
+"images/cousin_6016.JPEG",
+"images/cousin_6098.JPEG",
+"images/cousin_6137.JPEG",
+"images/cousin_6242.JPEG",
+"images/cousin_6344.JPEG",
+"images/cousin_6373.JPEG",
+"images/cousin_6392.JPEG",
+"images/cousin_6527.JPEG",
+"images/cousin_6536.JPEG",
+"images/cousin_6819.JPEG",
+"images/cousin_6862.JPEG",
+"images/cousin_6872.JPEG",
+"images/cousin_6875.JPEG",
+"images/cousin_7117.JPEG",
+"images/cousin_7153.JPEG",
+"images/cousin_9200.JPEG",
+"images/cousin_9210.JPEG",
+];
+
+const cousinPhotoGallery = document.getElementById("cousinPhotoGallery");
+
+cousinImages.forEach((src,index) => {
+  const img = document.createElement("img");
+  img.src = src;
+  img.alt = `写真${index + 1}`;
+  img.className = "thumbnail";
+  img.onclick = () => openModal(img);
+  cousinPhotoGallery.appendChild(img);
+});
+
 function openModal(imageElement) {
   const modal = document.getElementById("modal");
   const modalImage = document.getElementById("modalImage");
