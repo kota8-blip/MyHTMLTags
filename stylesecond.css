@@ -418,6 +418,7 @@ body.no-scroll{
   position: absolute;
   top: 33%;
   left: 15%;
+  width: 40%;
   font-size: 0.9em;
   cursor: text;
 }
@@ -436,34 +437,36 @@ body.no-scroll{
   position: relative;
 }
 
-.content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.content.type1 .maintext{
   position: absolute;
-  top: 30%;
+  top: 15%;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.maintext{
+  transform: translate(-50%, -50%);  
   font-size: 1.2em;
   font-weight: 550;
 }
 
-.maintext.sub{
-  user-select: none;
+.content.type1 .maintext.sub{
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
 }
 
-.subtext1{
+.content.type1 .subtext1{
   font-size: 1em;
-  margin-top: 2.5rem;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
 }
 
-.subtext2{
+.content.type1 .subtext2{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
   font-size: 0.8em;
-  margin-top: 1.25rem;
 }
 
 .image-slide{
@@ -502,9 +505,20 @@ body.no-scroll{
   overflow: hidden;
 }
 
-.forth-story .content{
+.content.type2 .maintext{
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    font-size: 1.2em;
+    font-weight: 550;
+}
+
+.content.type2 .maintext.sub{
   position: absolute;
-  top: 7.5%;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
 }
 
 .image-animation{
@@ -551,6 +565,13 @@ body.no-scroll{
   height: 0.0625rem;
   background-color: rgba(91, 72, 43, 0.5);
   margin-top: 1.25rem;
+}
+
+.restaurant-info .maintext,
+.sauna-info .maintext,
+.gallery-info .maintext{
+  font-size: 1.2rem;
+  font-weight: 550;
 }
 
 .restaurant-info .subtext1,
@@ -803,9 +824,10 @@ body.no-scroll{
   .scroll-left-text{
     position: absolute;
     top: 58%;
-    left: 15%;
+    left: 5%;
     font-size: 0.7rem;
     line-height: 1.2;
+    width: 90%;
   }
   
   .small{
@@ -818,18 +840,21 @@ body.no-scroll{
     height: 100vh;
   }
 
-  .content{
-    left: 50%;
-    top: 25%;
-    width: 100%;
-    transform: translate(-50%, -50%);
+  .content.type1 .subtext1,
+  .content.type1 .subtext2{
+    left: 2%;
+    transform: none;
+    width: 98%;
   }
 
-  .content .subtext1,
-  .content .subtext2{
-    position: static;
-    left: auto;
-    max-width: 90%;
+  .content.type1 .subtext2{
+    top: 38%;
+  }
+
+  .content.type1 .subtext2{
+    left: 2%;
+    transform: none;
+    width: 98%;
   }
   
   .image-slide{
@@ -977,7 +1002,7 @@ body.no-scroll{
     }
 
     .small{
-      font-size: 0.3em;
+      font-size: 0.5em;
       top: 60%;
     }
 
