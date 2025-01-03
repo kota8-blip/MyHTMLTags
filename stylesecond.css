@@ -850,12 +850,6 @@ body.no-scroll{
   .content.type1 .subtext2{
     top: 38%;
   }
-
-  .content.type1 .subtext2{
-    left: 2%;
-    transform: none;
-    width: 98%;
-  }
   
   .image-slide{
     position: absolute;
@@ -1010,6 +1004,17 @@ body.no-scroll{
       width: 100%;
       top: 25%;
     }
+
+  .content.type1 .subtext1,
+  .content.type1 .subtext2{
+    left: 2%;
+    transform: none;
+    width: 98%;
+  }
+
+  .content.type1 .subtext2{
+    top: 36%;
+  }
 
     .restaurant-info,
     .sauna-info,
