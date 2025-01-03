@@ -523,7 +523,7 @@ body.no-scroll{
 
 .image-animation{
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 5%;
 }
 
@@ -555,7 +555,7 @@ body.no-scroll{
 
 .restaurant-info{
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 50%;
   line-height: 1.875rem;
 }
@@ -583,9 +583,21 @@ body.no-scroll{
   max-width: 31.25rem;
 }
 
+.restaurant-info .subtext1,
+.sauna-info .subtext1,
+.gallery-info .subtext1{
+  font-size: 1rem;
+}
+
+.restaurant-info .subtext2,
+.sauna-info .subtext2,
+.gallery-info .subtext2{
+  font-size: 0.8rem;
+}
+
 .image-animation2{
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 5%;
 }
 
@@ -617,14 +629,14 @@ body.no-scroll{
 
 .sauna-info{
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   line-height: 1.875rem;
 }
 
 .image-animation3{
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 5%;
 }
 
@@ -656,7 +668,7 @@ body.no-scroll{
 
 .gallery-info{
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 50%;
   line-height: 1.875rem;
 }
@@ -864,6 +876,18 @@ body.no-scroll{
   
   .slider img{
     height: 50vh;
+  }
+
+  .image-animation{
+    top: 10%;
+  }
+
+  .image-animation2{
+    top: 40%;
+  }
+
+  .image-animation3{
+    top: 70%;
   }
 
   .image-animation,
