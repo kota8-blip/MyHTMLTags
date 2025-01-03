@@ -845,6 +845,7 @@ body.no-scroll{
     left: 2%;
     transform: none;
     width: 98%;
+    text-align: center;
   }
 
   .content.type1 .subtext2{
@@ -1010,6 +1011,7 @@ body.no-scroll{
     left: 2%;
     transform: none;
     width: 98%;
+    text-align: center;
   }
 
   .content.type1 .subtext2{
