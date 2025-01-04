@@ -14,98 +14,147 @@ JavaScriptにおける数値の表現
 console.log(1.2e4);//1.2かける10の4乗＝12000
 console.log(1.2e-4);//1.2かける10の-4乗＝0.00012
 
-const cousinImages = [
-"images/cousin_1424.JPEG",
-"images/cousin_1586.JPEG",
-"images/cousin_1934.JPEG",
-"images/cousin_2039.JPEG",
-"images/cousin_2295.JPEG",
-"images/cousin_2301.JPEG",
-"images/cousin_2447.JPEG",
-"images/cousin_2650.JPEG",
-"images/cousin_3021.JPEG",
-"images/cousin_3266.JPEG",
-"images/cousin_3277.JPEG",
-"images/cousin_3287.JPEG",
-"images/cousin_3288.JPEG",
-"images/cousin_3298.JPEG",
-"images/cousin_3495.JPEG",
-"images/cousin_3501.JPEG",
-"images/cousin_3801.JPEG",
-"images/cousin_3816.JPEG",
-"images/cousin_3907.JPEG",
-"images/cousin_4011.JPEG",
-"images/cousin_4033.JPEG",
-"images/cousin_4212.JPEG",
-"images/cousin_4479.JPEG",
-"images/cousin_4558.JPEG",
-"images/cousin_4705.JPEG",
-"images/cousin_4921.JPEG",
-"images/cousin_4983.JPEG",
-"images/cousin_4991.JPEG",
-"images/cousin_4993.JPEG",
-"images/cousin_5013.JPEG",
-"images/cousin_5043.JPEG",
-"images/cousin_5067.JPEG",
-"images/cousin_5120.JPEG",
-"images/cousin_5242.JPEG",
-"images/cousin_5246.JPEG",
-"images/cousin_5253.JPEG",
-"images/cousin_5273.JPEG",
-"images/cousin_5367.JPEG",
-"images/cousin_5419.JPEG",
-"images/cousin_5513.JPEG",
-"images/cousin_5652.JPEG",
-"images/cousin_5696.JPEG",
-"images/cousin_5721.JPEG",
-"images/cousin_5729.JPEG",
-"images/cousin_5999.JPEG",
-"images/cousin_6016.JPEG",
-"images/cousin_6098.JPEG",
-"images/cousin_6137.JPEG",
-"images/cousin_6242.JPEG",
-"images/cousin_6344.JPEG",
-"images/cousin_6373.JPEG",
-"images/cousin_6392.JPEG",
-"images/cousin_6527.JPEG",
-"images/cousin_6536.JPEG",
-"images/cousin_6819.JPEG",
-"images/cousin_6862.JPEG",
-"images/cousin_6872.JPEG",
-"images/cousin_6875.JPEG",
-"images/cousin_7117.JPEG",
-"images/cousin_7153.JPEG",
-"images/cousin_9200.JPEG",
-"images/cousin_9210.JPEG",
-];
-
 document.addEventListener("DOMContentLoaded", () => {
-  const cousinPhotoGallery = document.getElementById("cousinPhotoGallery");
+  const pageID = document.body.id;
+  const galleryImages = {
+    cousinPhotoGallery: [
+      "images/cousin_1424.JPEG",
+      "images/cousin_1586.JPEG",
+      "images/cousin_1934.JPEG",
+      "images/cousin_2039.JPEG",
+      "images/cousin_2295.JPEG",
+      "images/cousin_2301.JPEG",
+      "images/cousin_2447.JPEG",
+      "images/cousin_2650.JPEG",
+      "images/cousin_3021.JPEG",
+      "images/cousin_3266.JPEG",
+      "images/cousin_3277.JPEG",
+      "images/cousin_3287.JPEG",
+      "images/cousin_3288.JPEG",
+      "images/cousin_3298.JPEG",
+      "images/cousin_3495.JPEG",
+      "images/cousin_3501.JPEG",
+      "images/cousin_3801.JPEG",
+      "images/cousin_3816.JPEG",
+      "images/cousin_3907.JPEG",
+      "images/cousin_4011.JPEG",
+      "images/cousin_4033.JPEG",
+      "images/cousin_4212.JPEG",
+      "images/cousin_4479.JPEG",
+      "images/cousin_4558.JPEG",
+      "images/cousin_4705.JPEG",
+      "images/cousin_4921.JPEG",
+      "images/cousin_4983.JPEG",
+      "images/cousin_4991.JPEG",
+      "images/cousin_4993.JPEG",
+      "images/cousin_5013.JPEG",
+      "images/cousin_5043.JPEG",
+      "images/cousin_5067.JPEG",
+      "images/cousin_5120.JPEG",
+      "images/cousin_5242.JPEG",
+      "images/cousin_5246.JPEG",
+      "images/cousin_5253.JPEG",
+      "images/cousin_5273.JPEG",
+      "images/cousin_5367.JPEG",
+      "images/cousin_5419.JPEG",
+      "images/cousin_5513.JPEG",
+      "images/cousin_5652.JPEG",
+      "images/cousin_5696.JPEG",
+      "images/cousin_5721.JPEG",
+      "images/cousin_5729.JPEG",
+      "images/cousin_5999.JPEG",
+      "images/cousin_6016.JPEG",
+      "images/cousin_6098.JPEG",
+      "images/cousin_6137.JPEG",
+      "images/cousin_6242.JPEG",
+      "images/cousin_6344.JPEG",
+      "images/cousin_6373.JPEG",
+      "images/cousin_6392.JPEG",
+      "images/cousin_6527.JPEG",
+      "images/cousin_6536.JPEG",
+      "images/cousin_6819.JPEG",
+      "images/cousin_6862.JPEG",
+      "images/cousin_6872.JPEG",
+      "images/cousin_6875.JPEG",
+      "images/cousin_7117.JPEG",
+      "images/cousin_7153.JPEG",
+      "images/cousin_9200.JPEG",
+      "images/cousin_9210.JPEG",
+    ],
+    kahoPhotoGallery: [
+      "images/kaho_2036.JPEG",
+      "images/kaho_4850.JPEG",
+      "images/kaho_4916.JPEG",
+      "images/kaho_4997.JPEG",
+      "images/kaho_5012.JPEG",
+      "images/kaho_5374.JPEG",
+      "images/kaho_5391.JPEG",
+      "images/kaho_5409.JPEG",
+      "images/kaho_5513.JPEG",
+      "images/kaho_5696.JPEG",
+      "images/kaho_5721.JPEG",
+      "images/kaho_5727.JPEG",
+      "images/kaho_5728.JPEG",
+      "images/kaho_6887.JPEG",
+    ],
+    mikuPhotoGallery: [
+      "images/miku_2036.JPEG",
+      "images/miku_4557.JPEG",
+      "images/miku_4867.JPEG",
+      "images/miku_5004.JPEG",
+      "images/miku_5077.JPEG",
+      "images/miku_5168.JPEG",
+      "images/miku_5436.JPEG",
+      "images/miku_5459.JPEG",
+      "images/miku_5463.JPEG",
+      "images/miku_5847.JPEG",
+      "images/miku_5982.JPEG",
+      "images/miku_5987.JPEG",
+      "images/miku_6423.JPEG",
+      "images/miku_6430.JPEG",
+      "images/miku_6527.JPEG",
+      "images/miku_6533.JPEG",
+      "images/miku_6849.JPEG",
+      "images/miku_6953.JPEG",
+      "images/miku_7206.JPEG",
+      "images/miku_9199.JPEG",
+    ],
+    noaPhotoGallery: [
+      "images/noa_4872.JPEG",
+      "images/noa_4967.JPEG",
+      "images/noa_5024.JPEG",
+      "images/noa_5453.JPEG",
+      "images/noa_5478.JPEG",
+      "images/noa_5576.JPEG",
+      "images/noa_5636.JPEG",
+      "images/noa_5657.JPEG",
+      "images/noa_5667.JPEG",
+      "images/noa_5679.JPEG",
+      "images/noa_5682.JPEG",
+      "images/noa_5696.JPEG",
+      "images/noa_5723.JPEG",
+      "images/noa_5742.JPEG",
+      "images/noa_6848.JPEG",
+      "images/noa_6992.JPEG",
+      "images/noa_7134.JPEG",
+      "images/noa_7197.JPEG",
+    ],
+  };
 
-  if (!cousinPhotoGallery){
-    return;
-  }
+const images = galleryImages[pageID] || [];
+const photoGallery = document.getElementById(pageID)
 
-console.log("Before adding images:");
-console.log("Animations:", document.querySelectorAll('.animation img'));
-console.log("SecondAnimations:", document.querySelectorAll('.second-animation img'));
-console.log("ThirdAnimations:", document.querySelectorAll('.third-animation img'));
-
-cousinImages.forEach((src,index) => {
-  const img = document.createElement("img");
-  img.src = src;
-  img.alt = `写真${index + 1}`;
-  img.className = "thumbnail";
-  img.onclick = () => openModal(img);
-  cousinPhotoGallery.appendChild(img);
+if (photoGallery){
+  images.forEach((src,index) => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = `写真${index + 1}`;
+    img.className = "thumbnail";
+    img.onclick = () => openModal(img);
+    photoGallery.appendChild(img);
+  });
+}
 });
-
-console.log("Afrer adding images:");
-console.log("Animations:", document.querySelectorAll('.animation img'));
-console.log("SecondAnimations:", document.querySelectorAll('.sedond-animation img'));
-console.log("ThirdAnimations:", document.querySelectorAll('.third-animation img'));
-});
-
 
 function openModal(imageElement) {
   const modal = document.getElementById("modal");
