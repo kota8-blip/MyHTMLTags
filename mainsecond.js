@@ -83,7 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const cousinPhotoGallery = document.getElementById("cousinPhotoGallery");
 
   if (!cousinPhotoGallery){
-    console.error("cousinPhotoGallery is null. Check if the element with id 'cousinPhotoGallery' existes in the HTML.");
     return;
   }
 
