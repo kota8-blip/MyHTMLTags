@@ -79,7 +79,18 @@ const cousinImages = [
 "images/cousin_9210.JPEG",
 ];
 
-const cousinPhotoGallery = document.getElementById("cousinPhotoGallery");
+document.addEventListener("DOMContentLoaded", () => {
+  const cousinPhotoGallery = document.getElementById("cousinPhotoGallery");
+
+  if (!cousinPhotoGallery){
+    console.error("cousinPhotoGallery is null. Check if the element with id 'cousinPhotoGallery' existes in the HTML.");
+    return;
+  }
+
+console.log("Before adding images:");
+console.log("Animations:", document.querySelectorAll('.animation img'));
+console.log("SecondAnimations:", document.querySelectorAll('.second-animation img'));
+console.log("ThirdAnimations:", document.querySelectorAll('.third-animation img'));
 
 cousinImages.forEach((src,index) => {
   const img = document.createElement("img");
@@ -89,6 +100,13 @@ cousinImages.forEach((src,index) => {
   img.onclick = () => openModal(img);
   cousinPhotoGallery.appendChild(img);
 });
+
+console.log("Afrer adding images:");
+console.log("Animations:", document.querySelectorAll('.animation img'));
+console.log("SecondAnimations:", document.querySelectorAll('.sedond-animation img'));
+console.log("ThirdAnimations:", document.querySelectorAll('.third-animation img'));
+});
+
 
 function openModal(imageElement) {
   const modal = document.getElementById("modal");
