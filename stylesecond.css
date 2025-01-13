@@ -281,13 +281,13 @@ body.no-scroll{
 
 @keyframes backgroundSlide{
   0%{
-    background-image: url('images/IMG_5520_Original.JPEG');
+    background-image: url('images/background1.JPEG');
   }
   20%{
-    background-image: url('images/IMG_5532_Original.JPEG');
+    background-image: url('images/background2.JPEG');
   }
   40%{
-    background-image: url('images/IMG_5537_Original.JPEG');
+    background-image: url('images/background3.JPEG');
   }
   60%{
     background-image: url('images/background4.JPEG');
