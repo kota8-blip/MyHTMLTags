@@ -256,7 +256,7 @@ html body{
   flex-direction: column;
   gap: 1.25rem;
   position: absolute;
-  top: 10%;
+  top: 15%;
 }
 
 .side-menu.open .container p{
