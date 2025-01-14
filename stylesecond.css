@@ -924,7 +924,7 @@ body.no-scroll{
   .animation img,
   .second-animation img,
   .third-animation img{
-    height: 25vh !important;
+    height: 25vh;
     width: auto;
   }
 
