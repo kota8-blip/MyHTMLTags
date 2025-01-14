@@ -139,6 +139,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/noa_7134.JPEG",
       "images/noa_7197.JPEG",
     ],
+    HawaiiPhotoGallery:[
+      "images/hawaii_2669.JPEG",
+    ],
   };
 
 const images = galleryImages[pageID] || [];
