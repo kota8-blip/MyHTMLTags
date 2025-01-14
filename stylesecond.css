@@ -921,8 +921,8 @@ body.no-scroll{
   .animation img,
   .second-animation img,
   .third-animation img{
-    width: 100vw;
-    height: auto;
+    height: 45vh;
+    width: auto;
   }
 
   .restaurant-info{
