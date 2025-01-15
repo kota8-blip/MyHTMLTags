@@ -18,7 +18,7 @@ html body{
 .main-story .bg{
   background-size: cover;
   background-position: center;
-  animation: fadeSlide 25s infinite;
+  animation: fadeSlide 35s infinite;
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
@@ -30,10 +30,10 @@ html body{
 }
 
 .main-story .bg1{background-image: url('images/background1.JPEG'); animation-delay:0s;}
-.main-story .bg2{background-image: url('images/background2.JPEG'); animation-delay:5s;}
-.main-story .bg3{background-image: url('images/background3.JPEG'); animation-delay:10s;}
-.main-story .bg4{background-image: url('images/background4.JPEG'); animation-delay:15s;}
-.main-story .bg5{background-image: url('images/background5.JPEG'); animation-delay:20s;}
+.main-story .bg2{background-image: url('images/background2.JPEG'); animation-delay:7s;}
+.main-story .bg3{background-image: url('images/background3.JPEG'); animation-delay:14s;}
+.main-story .bg4{background-image: url('images/background4.JPEG'); animation-delay:21s;}
+.main-story .bg5{background-image: url('images/background5.JPEG'); animation-delay:28s;}
 
 @keyframes fadeSlide {
   0% {
