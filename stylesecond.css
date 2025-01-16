@@ -846,7 +846,7 @@ body.no-scroll{
   .version2{
     position: absolute;
     top: 37%;
-    right: 30%;
+    right: 45%;
   }
   
   .vertical-text-large{
@@ -1024,11 +1024,6 @@ body.no-scroll{
     .info-icon,
     .text-wrapper{
       display: none;
-    }
-    
-    .version2{
-      top: 37%;
-      right: 30%;
     }
     
     .vertical-text-large{
