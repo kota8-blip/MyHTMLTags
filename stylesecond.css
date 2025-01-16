@@ -387,7 +387,7 @@ body.no-scroll{
 .vertical-text-wrapper{
   position: absolute;
   top: 25%;
-  right: 17%;
+  right: 6%;
   transform: translateY(-50%);
   display: flex;
   align-items: center;
@@ -420,7 +420,7 @@ body.no-scroll{
 
 .version2{
   top: 37%;
-  right: 30%;
+  right: 17%;
 }
 
 .vertical-text-large{

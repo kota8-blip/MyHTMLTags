@@ -185,6 +185,13 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/hawaii_2987.JPEG",
       "images/hawaii_5362.JPEG",
       "images/hawaii_20150909.JPEG",
+      "images/hawaii_1647.JPEG",
+      "images/hawaii_1662.JPEG",
+      "images/hawaii_1664.JPEG",
+      "images/hawaii_1665.JPEG",
+      "images/hawaii_1669.JPEG",
+      "images/hawaii_1838.JPEG",
+      "images/hawaii_1841.JPEG",
     ],
     GuamPhotoGallery:[
       "images/guam_0325.JPEG",
