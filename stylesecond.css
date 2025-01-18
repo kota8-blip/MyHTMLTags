@@ -343,10 +343,11 @@ body.no-scroll{
   margin: 0;
   width: auto;
   white-space: normal;
+  font-size: 1.3em;
 }
 
 .left-text .first-line{
-  font-size: 1.5em;
+  font-size: 1.7em;
   margin-bottom: 1.25rem;
 }
 
@@ -436,7 +437,7 @@ body.no-scroll{
   color: whitesmoke;
   position: absolute;
   top: 33%;
-  left: 15%;
+  left: 10%;
   width: 40%;
   font-size: 0.9em;
   cursor: text;
@@ -835,6 +836,14 @@ body.no-scroll{
     left: 50%;
   }
 
+  .left-text p{
+    font-size: 1em;
+  }
+  
+  .left-text .first-line{
+    font-size: 1.5em;
+  }
+
   .vertical-text-wrapper{
     position: absolute;
     top: 8%;
@@ -1022,6 +1031,14 @@ body.no-scroll{
     .info-icon,
     .text-wrapper{
       display: none;
+    }
+
+    .left-text p{
+      font-size: 1em;
+    }
+    
+    .left-text .first-line{
+      font-size: 1.5em;
     }
 
     .vertical-text-wrapper{
