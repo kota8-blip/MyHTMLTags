@@ -229,6 +229,10 @@ html body{
   color: whitesmoke;
 }
 
+input:focus {
+  outline: none;
+  border: none;
+}
 
 .side-menu{
   position: fixed;
@@ -765,7 +769,7 @@ body.no-scroll{
   justify-content: center;
 }
 
-.search-box2 input{
+.search-box2 {
   background-color: rgba(91, 72, 43, 0.5);
   display: flex;
   padding: 0.3125rem 0.625rem;

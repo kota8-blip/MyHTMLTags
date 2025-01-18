@@ -304,6 +304,26 @@ function closeModal() {
   modal.style.display = "none";
 }
 
+document.getElementById("searchInput").addEventListener("keydown", function(event){
+  if(event.key === "Enter"){
+    search();
+  }
+});
+
+function search(){
+  const query = document.getElementById("searchInput").value.trim();
+
+  if (["kaho", "華穂", "かほ", "華穂ちん", "かほちん"].includes(query.toLowerCase())) {
+    window.location.href = "kaho_album.html";
+  } else if (["mikuru", "みっくん", "miku", "みっ君"].includes(query.toLowerCase())) {
+    window.location.href = "miku_album.html";
+  } else if (["noa", "ノアちゃん", "のあちゃん"].includes(query.toLowerCase())) {
+    window.location.href = "noa_album.html";
+  } else {
+    alert("一致するページが見つかりません。");
+  }
+}
+
 const hamburger = document.querySelector('.hamburger');
 const sideMenu = document.querySelector('.side-menu');
 const searchBox = document.querySelector('.search-box');
