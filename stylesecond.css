@@ -499,8 +499,9 @@ body.no-scroll{
 
 .slider{
   display: flex;
-  animation: slide 25s linear infinite;
+  animation: slide 50s linear infinite;
   gap: 3.75rem;
+  width: max-content;
 }
 
 .slider img{
@@ -513,7 +514,7 @@ body.no-scroll{
     transform: translateX(0);
   }
   100%{
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
@@ -902,7 +903,7 @@ body.no-scroll{
   }
   
   .slider{
-    animation: slide 15s linear infinite;
+    animation: slide 30s linear infinite;
     gap: 3.75rem;
   }
   
