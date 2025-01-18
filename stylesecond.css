@@ -1023,15 +1023,20 @@ body.no-scroll{
     .text-wrapper{
       display: none;
     }
+
+    .vertical-text-wrapper{
+      position: absolute;
+      top: 15%;
+    }
+
+    .vertical-text{
+      font-size: 1.3em;
+    }
     
     .vertical-text-large{
-      font-size: 1.3em;
+      font-size: 1.1em;
       margin-right: 3px;
     }
-    /*
-    .vertical-text-large:nth-child(1){
-      margin-top: 2em;
-    }*/
 
     .scroll-left-text{
       font-size: 0.5em;
