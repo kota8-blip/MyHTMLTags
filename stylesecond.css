@@ -387,10 +387,8 @@ body.no-scroll{
 .vertical-text-wrapper{
   position: absolute;
   top: 25%;
-  right: 6%;/*
-  transform: translateY(-50%);*/
-  display: flex;/*
-  align-items: center;*/
+  right: 6%;
+  display: flex;
   user-select: none;
 }
 
@@ -839,13 +837,13 @@ body.no-scroll{
 
   .vertical-text-wrapper{
     position: absolute;
-    top: 25%;
+    top: 8%;
     right: 10%;
   }
   
   .version2{
     position: absolute;
-    top: 37%;
+    top: 8%;
     right: 45%;
   }
   
@@ -855,7 +853,7 @@ body.no-scroll{
   }
   
   .vertical-text-large:nth-child(1){
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
   
   .scroll-left-text{
@@ -1030,10 +1028,10 @@ body.no-scroll{
       font-size: 1.3em;
       margin-right: 3px;
     }
-    
+    /*
     .vertical-text-large:nth-child(1){
       margin-top: 2em;
-    }
+    }*/
 
     .scroll-left-text{
       font-size: 0.5em;
