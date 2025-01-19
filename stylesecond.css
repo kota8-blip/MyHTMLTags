@@ -982,7 +982,8 @@ body.no-scroll{
     gap: 0.1rem;
     padding-left: 0.5rem;
     padding-top: 1rem;
-    width: 35%;
+    width: 45%;
+    flex-wrap: wrap;
   }
   
   .informations{
