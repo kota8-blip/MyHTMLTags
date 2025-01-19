@@ -317,8 +317,16 @@ function search(){
     window.location.href = "kaho_album.html";
   } else if (["mikuru", "みっくん", "miku", "みっ君"].includes(query.toLowerCase())) {
     window.location.href = "miku_album.html";
-  } else if (["noa", "ノアちゃん", "のあちゃん"].includes(query.toLowerCase())) {
+  } else if (["noa", "ノアちゃん", "のあちゃん", "のあ", "ノア"].includes(query.toLowerCase())) {
     window.location.href = "noa_album.html";
+  } else if (["従妹", "いとこ", "cousin"].includes(query.toLowerCase())) {
+    window.location.href = "cousin_album.html";
+  } else if (["hilton", "ヒルトン", "ひるとん", "ヒルトンホテル", "ひるとんほてる", "hilton hotel"].includes(query.toLowerCase())) {
+    window.location.href = "Hilton_album.html";
+  } else if (["guam", "ぐあむ", "グアム"].includes(query.toLowerCase())) {
+    window.location.href = "Guam_album.html";
+  } else if (["hawaii", "はわい", "ハワイ"].includes(query.toLowerCase())) {
+    window.location.href = "hawaii_album.html";
   } else {
     alert("一致するページが見つかりません。");
   }
