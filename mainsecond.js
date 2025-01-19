@@ -336,69 +336,41 @@ const hamburger = document.querySelector('.hamburger');
 const sideMenu = document.querySelector('.side-menu');
 const searchBox = document.querySelector('.search-box');
 const body = document.querySelector('body');
+const overlay = document.querySelector('.overlay');
+const header = document.querySelector('.header');
+
+function toggleMenu(isOpen){
+  hamburger.classList.toggle('open', isOpen);
+  sideMenu.classList.toggle('open', isOpen);
+  overlay.classList.toggle('active', isOpen);
+  body.classList.toggle('no-scroll', isOpen);
+  searchBox.classList.toggle('active', isOpen);
+}
 
 hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('open');
-  sideMenu.classList.toggle('open');
-
-  if(sideMenu.classList.contains('open')){
-    body.classList.add('no-scroll');
-    searchBox.classList.add('active');
-  } else{
-    body.classList.remove('no-scroll');
-    searchBox.classList.remove('active');
-  }
-  });
+  const isOpen = !hamburger.classList.contains('open');
+  toggleMenu(isOpen);
+});
 
   document.addEventListener('click', (e) => {
-    if(!sideMenu.contains(e.target) && !hamburger.contains(e.target)){
-      sideMenu.classList.remove('open');
-      hamburger.classList.remove('open');
-      body.classList.remove('no-scroll');
-      searchBox.classList.remove('active');
+    if(!sideMenu.contains(e.target) && !searchBox.contains(e.target) && !hamburger.contains(e.target)){
+      toggleMenu(false);
     }
   });
 
-  const overlay = document.querySelector('.overlay');
+  searchBox.addEventListener('click', (e) => e.stopPropagation());
 
-  hamburger.addEventListener('click', () => {
-    const isOpen = hamburger.classList.contains('open');
+  overlay.addEventListener('click', () => toggleMenu(false));
 
-    if(isOpen){
-      overlay.classList.add('active');
-    } else{
-      overlay.classList.remove('active');
-    }
+  window.addEventListener('scroll', () => {
+    const isScrolled = window.scrollY > window.innerHeight;
+
+    header.classList.toggle('fixed', isScrolled);
+    hamburger.classList.toggle('active', isScrolled);
+    searchBox.classList.toggle('active', isScrolled);
+
+    header.classList.toggle('darkened', overlay.classList.contains('active'));
   });
-
-  overlay.addEventListener('click', () => {
-    hamburger.classList.remove('open');
-    sideMenu.classList.remove('open');
-    overlay.classList.remove('active');
-  });
-
-window.addEventListener('scroll', function(){
-  const header = this.document.querySelector('.header');
-  const searchBox = this.document.querySelector('.search-box');
-  const hamburger = this.document.querySelector('.hamburger');
-  const overlay = this.document.querySelector('.overlay');
-
-  if(window.scrollY > window.innerHeight){
-    header.classList.add('fixed');
-    searchBox.classList.add('active');
-    hamburger.classList.add('active');
-  } else{
-    header.classList.remove('fixed');
-    searchBox.classList.remove('active');
-    hamburger.classList.remove('active');
-  }
-
-  if(overlay.classList.contains('active')){
-    header.classList.add('darkened');
-  } else{
-    header.classList.remove('darkened');
-  }
-});
 
 const animations = document.querySelectorAll('.animation img');
 const timers = document.querySelectorAll('.timer');

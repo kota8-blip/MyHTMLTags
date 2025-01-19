@@ -267,10 +267,6 @@ input:focus {
   color: rgba(91, 72, 43, 0.5);
 }
 
-.side-menu.open .search-box input{
-  background: rgba(159, 125, 75, 0.5);
-}
-
 .overlay{
   position: fixed;
   top: 0;
