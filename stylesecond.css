@@ -236,6 +236,10 @@ input:focus {
   background-color: white;
 }
 
+.search-box.active input:focus::placeholder{
+  color: transparent;
+}
+
 .side-menu{
   position: fixed;
   top: 0;
@@ -774,10 +778,15 @@ body.no-scroll{
   border-radius: 1.875rem;
   text-align: center;
   background-color: rgba(91, 72, 43, 0.5);
+  color: white;
 }
 
 .search-box2 input::placeholder{
   color: whitesmoke;
+}
+
+.search-box2 input:focus::placeholder {
+  color: transparent;
 }
 
 .container-group1,
