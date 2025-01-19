@@ -325,7 +325,7 @@ function search(){
 
   if (["kaho", "華穂", "かほ", "華穂ちん", "かほちん"].includes(query.toLowerCase())) {
     window.location.href = "kaho_album.html";
-  } else if (["mikuru", "みっくん", "miku", "みっ君"].includes(query.toLowerCase())) {
+  } else if (["mikuru", "みっくん", "miku", "みっ君", "みくる", "ミクル"].includes(query.toLowerCase())) {
     window.location.href = "miku_album.html";
   } else if (["noa", "ノアちゃん", "のあちゃん", "のあ", "ノア"].includes(query.toLowerCase())) {
     window.location.href = "noa_album.html";

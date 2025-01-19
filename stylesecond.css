@@ -1124,7 +1124,7 @@ body.no-scroll{
     .informations-left{
       gap: 0.1rem;
       padding-left: 1rem;
-      padding-top: 2.5rem;
+      padding-top: 1rem;
       font-size: 0.8rem;
     }
     
@@ -1139,7 +1139,7 @@ body.no-scroll{
     .sns-icons{
       gap: 0.3rem;
       font-size: 1rem;
-      margin-top: 2.5rem;
+      margin-top: 1rem;
       padding-bottom: 1rem;
     }
 
