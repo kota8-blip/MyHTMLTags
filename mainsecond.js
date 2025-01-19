@@ -310,8 +310,18 @@ document.getElementById("searchInput").addEventListener("keydown", function(even
   }
 });
 
+document.getElementById("searchInput2").addEventListener("keydown", function(event){
+  if(event.key === "Enter"){
+    search();
+  }
+});
+
 function search(){
-  const query = document.getElementById("searchInput").value.trim();
+  const query1 = document.getElementById("searchInput").value.trim();
+  const query2 = document.getElementById("searchInput2").value.trim();
+
+  const query = query1 || query2;
+
 
   if (["kaho", "華穂", "かほ", "華穂ちん", "かほちん"].includes(query.toLowerCase())) {
     window.location.href = "kaho_album.html";
@@ -335,6 +345,7 @@ function search(){
 const hamburger = document.querySelector('.hamburger');
 const sideMenu = document.querySelector('.side-menu');
 const searchBox = document.querySelector('.search-box');
+const searchBox2 = document.querySelector('.search-box2');
 const body = document.querySelector('body');
 const overlay = document.querySelector('.overlay');
 const header = document.querySelector('.header');
@@ -345,6 +356,7 @@ function toggleMenu(isOpen){
   overlay.classList.toggle('active', isOpen);
   body.classList.toggle('no-scroll', isOpen);
   searchBox.classList.toggle('active', isOpen);
+  searchBox2.classList.toggle('active', isOpen);
 }
 
 hamburger.addEventListener('click', () => {
@@ -359,6 +371,7 @@ hamburger.addEventListener('click', () => {
   });
 
   searchBox.addEventListener('click', (e) => e.stopPropagation());
+  searchBox2.addEventListener('click', (e) => e.stopPropagation());
 
   overlay.addEventListener('click', () => toggleMenu(false));
 
@@ -368,6 +381,7 @@ hamburger.addEventListener('click', () => {
     header.classList.toggle('fixed', isScrolled);
     hamburger.classList.toggle('active', isScrolled);
     searchBox.classList.toggle('active', isScrolled);
+    searchBox2.classList.toggle('active', isScrolled);
 
     header.classList.toggle('darkened', overlay.classList.contains('active'));
   });
