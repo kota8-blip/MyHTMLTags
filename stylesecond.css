@@ -232,6 +232,7 @@ html body{
 input:focus {
   outline: none;
   border: none;
+  background-color: white;
 }
 
 .side-menu{
@@ -981,7 +982,7 @@ body.no-scroll{
   .informations-left{
     gap: 0.1rem;
     padding-left: 0.5rem;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     width: 45%;
     flex-wrap: wrap;
   }
@@ -1002,7 +1003,7 @@ body.no-scroll{
   .sns-icons{
     gap: 0.3rem;
     font-size: 0.6rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     padding-bottom: 1rem;
   }
   
