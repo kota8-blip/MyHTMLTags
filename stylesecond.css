@@ -109,7 +109,7 @@ html body{
 .photo-gallery{
   display: flex;
   flex-wrap: wrap;
-  gap: 0.625rem;
+  gap: 1rem;
   margin: 1.25rem;
   justify-content: center;
 }
@@ -121,6 +121,7 @@ html body{
   background-color: white;
   cursor: pointer;
   transition: transform 0.3s;
+  margin: 0.5rem;
 }
 
 .thumbnail:hover{
