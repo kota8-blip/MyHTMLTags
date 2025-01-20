@@ -33,7 +33,7 @@ html body{
 .main-story .bg2{background-image: url('images/background2.JPEG'); animation-delay:7s;}
 .main-story .bg3{background-image: url('images/background3.JPEG'); animation-delay:14s;}
 .main-story .bg4{background-image: url('images/background4.JPEG'); animation-delay:21s;}
-.main-story .bg5{background-image: url('images/background5.JPEG'); animation-delay:28s;}
+.main-story .bg5{background-image: url('images/cousin_6016.JPEG'); animation-delay:28s;}
 
 @keyframes fadeSlide {
   0% {
@@ -917,7 +917,7 @@ body.no-scroll{
   }
   
   .slider{
-    animation: slide 30s linear infinite;
+    animation: slide 60s linear infinite;
     gap: 3.75rem;
   }
   
