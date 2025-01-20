@@ -443,18 +443,22 @@ body.no-scroll{
   margin-right: 1rem;
 }
 
-.scroll-left-text{
-  color: whitesmoke;
+.scroll-left-text-container{
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 33%;
   left: 10%;
   width: 40%;
+  color: whitesmoke;
+}
+
+.scroll-left-text{
   font-size: 0.9em;
   cursor: text;
 }
 
 .small{
-  top: 53%;
   font-size: 0.7em;
 }
 
@@ -884,19 +888,23 @@ body.no-scroll{
   .vertical-text-large:nth-child(1){
     margin-top: 1.5rem;
   }
+
+  .scroll-left-text-container{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    text-align: center;
+  }
   
   .scroll-left-text{
-    position: absolute;
-    top: 58%;
-    left: 5%;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     line-height: 1.2;
-    width: 90%;
   }
   
   .small{
-    top: 78%;
-    font-size: 0.6rem;
+    font-size: 0.45rem;
     line-height: 1.2;
   }
 
