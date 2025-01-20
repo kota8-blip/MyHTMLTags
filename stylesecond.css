@@ -823,7 +823,12 @@ body.no-scroll{
     overflow-x: hidden;
   }
 
-  .container p {
+  .header .container{
+    padding: 0.25rem;
+    padding-left: 0.5em;
+  }
+
+  .side-menu .container p {
     writing-mode: vertical-rl;
     padding: 0.3125rem;
     margin: 0;
