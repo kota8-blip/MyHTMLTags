@@ -460,6 +460,7 @@ body.no-scroll{
 
 .small{
   font-size: 0.7em;
+  line-height: 3;
 }
 
 .third-story{
@@ -905,7 +906,7 @@ body.no-scroll{
   
   .small{
     font-size: 0.45rem;
-    line-height: 1.2;
+    line-height: 3;
   }
 
   .third-story{
